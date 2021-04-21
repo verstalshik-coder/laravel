@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background: #E5E5E5;
+}
+
+header{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.menu-list{
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    z-index: 10000;
+    background: transparent;
+}
+
+.menu-list a, .menu-list p{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    border-bottom: 1.5px solid #A0A0A0FF;
+    background: white;
+}
+
+.menu-list.active {
+    display: flex;
+}
+
+.menu-list a:nth-last-child(1) {
+    padding: 10px;
+    border: none;
+}
+
+.menu-list a:hover, .menu-list p:hover {
+    background: #A0A0A0FF;
+}
+
+.left, .right{
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+
+.logo{
+    display: block;
+    width: 48px;
+    height: 28px;
+    margin: 10px;
+}
+
+.bot-but{
+    content: url(../img/main/botButton.png);
+    display: block;
+    width: 17px;
+    height: 17px;
+    margin: 7px 0 6px 5px;
+}
+
+.game, .news, .log{
+    display: flex;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.game p, .news p, .log p, .play p{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.play{
+    width: 190px;
+    display: block;
+    background: #EC0D0D;
+    margin: 0 0 0 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.play p{
+    color: white;
+}
+
+footer{
+    background: white;
+    position: relative;
+    display: block;
+    height: auto;
+    padding-top: 20px;
+}
+
+.soc-logo{
+    width: 553px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.pl-logo{
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 20px auto 0 auto;
+    justify-content: center;
+}
+
+.pl-logo img{
+    object-fit: contain;
+    padding-right: 10px;
+}
+
+.terms{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
