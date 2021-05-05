@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,5 +29,7 @@ Route::post('/register/reguser', 'App\Http\Controllers\MainController@userReg');
 Route::get('/userexit','App\Http\Controllers\MainController@exit');
 
 Route::get('/test','App\Http\Controllers\MainController@test');
-Route::get('/test1','App\Http\Controllers\MainController@test1');
-Route::get('/test2','App\Http\Controllers\MainController@test2');
+Route::get('/test/tr','App\Http\Controllers\MainController@fill');
+
+Route::get('/test/group/{id}',[MainController::class, 'deleteGroup']);
+Route::get('/test/user/{id}',[MainController::class, 'deleteStud']);
